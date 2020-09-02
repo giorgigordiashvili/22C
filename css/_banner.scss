@@ -1,0 +1,28 @@
+.banner {
+  position: relative;
+  .full {
+    z-index: 1;
+    width: 100%;
+  }
+  .heater {
+    position: absolute;
+    z-index: 2;
+    right: 17vw;
+    bottom: 0;
+    height: 70%;
+  }
+  p {
+    span {
+      font-size: 50px;
+    }
+    position: absolute;
+    top: 0%;
+    color: #fff;
+    font-size: 27px;
+    width: 40vw;
+    padding: 5vw;
+    .main-button {
+      margin: 15px 0;
+    }
+  }
+}

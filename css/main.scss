@@ -1,0 +1,133 @@
+@import "_fonts.scss";
+html,
+body {
+  font-family: Glaho;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+.container {
+  width: 92vw;
+  margin: auto;
+}
+
+.main-button {
+  font-family: Firago;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f05323;
+  border: 0;
+  outline: 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 90px 0;
+  img {
+    height: 75px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.about {
+  background: rgba(240, 220, 182, 0.1);
+  padding: 150px 0 0 0;
+  position: relative;
+  .bg {
+    width: 70%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: -1;
+  }
+  .container {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      width: 100%;
+    }
+    .text {
+      padding: 80px 100px;
+      p {
+        width: 70%;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+.about-reversed {
+  background: rgba(240, 220, 182, 0.1);
+  padding: 150px 0;
+  position: relative;
+  .bg {
+    width: 70%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: -1;
+  }
+  .container {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      width: 100%;
+    }
+    .text {
+      padding: 80px 100px;
+      p {
+        width: 70%;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+.space {
+  padding: 80px 0;
+  img {
+    width: 55vw;
+  }
+}
+footer {
+  background-color: rgba(240, 220, 182, 0.1);
+  .logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 0;
+  }
+  img {
+    width: 20%;
+  }
+  ul {
+    padding: 0;
+    li {
+      padding-top: 30px;
+      i {
+        color: #f05323;
+      }
+      a {
+        text-decoration: none;
+        color: #1a1a1a;
+      }
+    }
+  }
+}
+@import "_products.scss";
+@import "_banner.scss";
+@import "_header.scss";
