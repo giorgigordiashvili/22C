@@ -71,6 +71,10 @@ header {
     a {
       text-decoration: none;
       color: #1a1a1a;
+      transition: 0.1s all ease;
+      &:hover {
+        color: #f05323;
+      }
     }
     display: inline-block;
   }
