@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 90px 0;
+  @media only screen and (max-width: 768px) {
+    padding: 20px 0;
+  }
 
   .product {
     &.see-all {
@@ -36,8 +39,8 @@
       }
     }
     text-align: center;
-    margin: 15px;
-    box-shadow: 0px 21px 85px 0px rgba(240, 83, 35, 0.09);
+    margin: 0;
+
     border-radius: 8px;
     img {
       width: 45%;

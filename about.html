@@ -15,17 +15,32 @@
       <div class="logo">
         <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
       </div>
-      <nav>
+      <nav id="navigation">
         <ul>
-          <li><a href="#">მთავარი</a></li>
-          <li><a href="#">ჩვენ შესახებ</a></li>
-          <li><a href="#">ონლაინ მაღაზია</a></li>
-          <li><a href="#">კონტაქტი</a></li>
+          <li><a class="active" href="index.html">მთავარი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="shop.html">ონლაინ მაღაზია</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
         </ul>
+        <i onclick="rame()" class="fa fa-times"></i>
       </nav>
-      <div class="search">
-        <form action=""><input type="text" /><i class="fa fa-search"></i></form>
+      <div id="search" class="search">
+        <form action="">
+          <input type="text" /><i
+            onclick="searchClick()"
+            class="fa fa-search"
+          ></i>
+        </form>
+        <div class="search-output">
+          <a href="full.html"
+            >Gas boilers Ariston CARES X 24as boilers Ariston CARES X 24as
+            boilers Ariston CARES X 24</a
+          >
+          <a href="full.html">Gas boilers Ariston X 45</a>
+        </div>
       </div>
+      <i onclick="rame()" class="fa fa-bars"></i>
+
       <div class="language">
         <ul>
           <li class="active">GE</li>
@@ -50,7 +65,12 @@
       </div>
     </section>
     <section class="space container">
-      <img src="./images/space-bg.png" alt="Space Background" />
+      <img class="hide" src="./images/space-bg.png" alt="Space Background" />
+      <img
+        class="hidden"
+        src="./images/space-bg-mobile.png"
+        alt="Space Background"
+      />
     </section>
     <section class="about-reversed">
       <div class="container">
@@ -97,5 +117,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

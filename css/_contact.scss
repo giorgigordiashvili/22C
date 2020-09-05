@@ -1,0 +1,102 @@
+.contact {
+  &.container {
+    width: 76vw;
+  }
+  h1 {
+    font-size: 35px;
+    color: #f05323;
+  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      padding: 10px;
+      margin: 20px 0 20px 10px;
+      @media only screen and (max-width: 768px) {
+        margin-left: 0;
+      }
+      border-radius: 10px;
+      border: 2px solid rgba(224, 224, 224, 0.7);
+      outline: none;
+      &:focus {
+        border: 2px solid rgba(240, 83, 35, 0.7);
+      }
+    }
+    input[type="submit"] {
+      width: 33%;
+      align-self: flex-end;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    label {
+      text-align: left;
+      position: relative;
+      background: rgba(0, 0, 0, 0.1);
+      height: 1px;
+      margin-top: 10px;
+      bottom: -30px;
+      @media only screen and (max-width: 768px) {
+        bottom: 0;
+        margin: 0;
+        height: 0;
+      }
+      span {
+        background: #fff;
+        padding: 0 10px 0 0;
+        position: relative;
+        top: -8px;
+        @media only screen and (max-width: 768px) {
+          top: 0;
+        }
+      }
+    }
+    .line {
+      position: relative;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 768px) {
+        text-align: left;
+      }
+      i {
+        color: #f05323;
+        font-size: 25px;
+        padding-right: 17px;
+      }
+    }
+  }
+  .map {
+    overflow: hidden;
+  }
+  iframe {
+    width: 70vw;
+    height: 20vw;
+    padding: 80px 0;
+    @media only screen and (max-width: 768px) {
+      width: 90vw;
+      height: 90vw;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}

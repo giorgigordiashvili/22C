@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22 გრადუსი</title>
+    <link
+      rel="stylesheet"
+      href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li><a class="active" href="index.html">მთავარი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="shop.html">ონლაინ მაღაზია</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+        <i onclick="rame()" class="fa fa-times"></i>
+      </nav>
+      <div id="search" class="search">
+        <form action="">
+          <input type="text" /><i
+            onclick="searchClick()"
+            class="fa fa-search"
+          ></i>
+        </form>
+        <div class="search-output">
+          <a href="full.html"
+            >Gas boilers Ariston CARES X 24as boilers Ariston CARES X 24as
+            boilers Ariston CARES X 24</a
+          >
+          <a href="full.html">Gas boilers Ariston X 45</a>
+        </div>
+      </div>
+      <i onclick="rame()" class="fa fa-bars"></i>
+
+      <div class="language">
+        <ul>
+          <li class="active">GE</li>
+          <li>EN</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="shop container">
+      <div class="filter" id="filter-button">
+        <h2 onclick="filterSlide()">
+          <img src="./images/filter.png" alt="Filter Image" />ფილტრი
+        </h2>
+
+        <div class="price-filter">
+          <p>ფასი</p>
+          <div>
+            <input type="text" class="price" placeholder="- დან" name="from" />
+            <input class="price" type="text" placeholder="- მდე" name="to" />
+          </div>
+        </div>
+        <div class="category-filter">
+          <h3>პროდუქტი</h3>
+          <label class="ff"
+            >არცერთი
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >ცენტრალური გათბობის ქვაბი
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >წყალგაყვანილობა
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="category-filter">
+          <h3>ქვე-კატეგორია</h3>
+          <label class="ff"
+            >საკონდენსაციო
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="brand-filter">
+          <h3>ბრენდი</h3>
+          <label class="ff"
+            >Vaillant
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >Vaillant/Protherm
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >Radiatori 2000
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >Emtas
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ff"
+            >Sesta
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+        <div class="product">
+          <img src="./images/ariston.png" alt="Product Image" />
+          <p>Gas boilers Ariston CARES X 24</p>
+          <p>1,500.00 ₾</p>
+          <button class="main-button">სრულად</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo-footer">
+          <img src="./images/logo.png" alt="Logo Footer" />
+          <p>© ყველა უფლება დაცულია</p>
+        </div>
+        <div>
+          <h3>ჩვენს შესახებ</h3>
+          <ul>
+            <li><a href="#">ვინ ვართ</a></li>
+            <li><a href="#">რას ვაკეთებთ</a></li>
+            <li><a href="#">ჩვენი გუნდი</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>კონტაქტი</h3>
+          <ul>
+            <li><i class="fa fa-phone"></i> 032 200 80 08</li>
+            <li><i class="fa fa-envelope"></i> info@22gradusi.ge</li>
+            <li><i class="fa fa-facebook-square"></i> /aquathermbmc</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/shop.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22 გრადუსი</title>
+    <link
+      rel="stylesheet"
+      href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li><a class="active" href="index.html">მთავარი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="shop.html">ონლაინ მაღაზია</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+        <i onclick="rame()" class="fa fa-times"></i>
+      </nav>
+      <div id="search" class="search">
+        <form action="">
+          <input type="text" /><i
+            onclick="searchClick()"
+            class="fa fa-search"
+          ></i>
+        </form>
+        <div class="search-output">
+          <a href="full.html"
+            >Gas boilers Ariston CARES X 24as boilers Ariston CARES X 24as
+            boilers Ariston CARES X 24</a
+          >
+          <a href="full.html">Gas boilers Ariston X 45</a>
+        </div>
+      </div>
+      <i onclick="rame()" class="fa fa-bars"></i>
+
+      <div class="language">
+        <ul>
+          <li class="active">GE</li>
+          <li>EN</li>
+        </ul>
+      </div>
+    </header>
+    <section class="contact container">
+      <h1 style="text-align: left">კონტაქტი</h1>
+
+      <form action="">
+        <div class="line">
+          <label for="name"><span>თქვენი სახელი</span></label>
+          <input type="text" name="name" />
+        </div>
+        <div class="line">
+          <label for="email"><span>ელ-ფოსტა</span></label
+          ><input type="email" name="email" />
+        </div>
+        <div class="line">
+          <label for="subject"><span>სათაური</span></label
+          ><input type="text" name="subject" />
+        </div>
+        <div class="line">
+          <label for="text"><span>შეტყობინება</span></label>
+          <textarea name="text" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <input
+          style="border: none"
+          class="main-button dark"
+          type="submit"
+          value="გაგზავნა"
+        />
+      </form>
+
+      <div class="row">
+        <p><i class="fa fa-map-marker"></i> 98 ქეთევან დედოფალის გამზირი</p>
+        <p><i class="fa fa-phone"></i> 032 200 80 08</p>
+        <p><i class="fa fa-envelope"></i> INFO@22GRADUSI.GE</p>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.473371230055!2d44.840488751207225!3d41.68871567913584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440db2580eb6b1%3A0x6df8b40158117036!2zOTggS2V0ZXZhbiBEZWRvZmFsaSBBdmUsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1599075213649!5m2!1ska!2sge"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo-footer">
+          <img src="./images/logo.png" alt="Logo Footer" />
+          <p>© ყველა უფლება დაცულია</p>
+        </div>
+        <div>
+          <h3>ჩვენს შესახებ</h3>
+          <ul>
+            <li><a href="#">ვინ ვართ</a></li>
+            <li><a href="#">რას ვაკეთებთ</a></li>
+            <li><a href="#">ჩვენი გუნდი</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>კონტაქტი</h3>
+          <ul>
+            <li><i class="fa fa-phone"></i> 032 200 80 08</li>
+            <li><i class="fa fa-envelope"></i> info@22gradusi.ge</li>
+            <li><i class="fa fa-facebook-square"></i> /aquathermbmc</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

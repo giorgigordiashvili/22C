@@ -10,10 +10,17 @@
     right: 17vw;
     bottom: 0;
     height: 70%;
+    @media only screen and (max-width: 768px) {
+      right: 25vw;
+      bottom: -5vw;
+    }
   }
   p {
     span {
       font-size: 50px;
+      @media only screen and (max-width: 768px) {
+        font-size: 29px;
+      }
     }
     position: absolute;
     top: 0%;
@@ -21,6 +28,11 @@
     font-size: 27px;
     width: 40vw;
     padding: 5vw;
+    @media only screen and (max-width: 768px) {
+      width: 80vw;
+      font-size: 14px;
+    }
+
     .main-button {
       margin: 15px 0;
     }

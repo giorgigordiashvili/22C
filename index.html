@@ -8,6 +8,11 @@
       rel="stylesheet"
       href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -15,17 +20,32 @@
       <div class="logo">
         <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
       </div>
-      <nav>
+      <nav id="navigation">
         <ul>
-          <li><a href="#">მთავარი</a></li>
-          <li><a href="#">ჩვენ შესახებ</a></li>
-          <li><a href="#">ონლაინ მაღაზია</a></li>
-          <li><a href="#">კონტაქტი</a></li>
+          <li><a class="active" href="index.html">მთავარი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="shop.html">ონლაინ მაღაზია</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
         </ul>
+        <i onclick="rame()" class="fa fa-times"></i>
       </nav>
-      <div class="search">
-        <form action=""><input type="text" /><i class="fa fa-search"></i></form>
+      <div id="search" class="search">
+        <form action="">
+          <input type="text" /><i
+            onclick="searchClick()"
+            class="fa fa-search"
+          ></i>
+        </form>
+        <div class="search-output">
+          <a href="full.html"
+            >Gas boilers Ariston CARES X 24as boilers Ariston CARES X 24as
+            boilers Ariston CARES X 24</a
+          >
+          <a href="full.html">Gas boilers Ariston X 45</a>
+        </div>
       </div>
+      <i onclick="rame()" class="fa fa-bars"></i>
+
       <div class="language">
         <ul>
           <li class="active">GE</li>
@@ -34,30 +54,32 @@
       </div>
     </header>
     <section class="container banner">
-      <img class="full" src="./images/banner.png" alt="Banner" />
+      <img class="full hide" src="./images/banner.png" alt="Banner" />
+      <img class="full hidden" src="./images/banner-mobile.png" alt="Banner" />
       <img class="heater" src="./images/ariston.png" alt="Ariston" />
       <p>
         <span>22</span> გრადუსი კორპორატიულ და საცალო მომხმარებელს პრემიუმ და
         საშუალო კლასის გათბობის სისტემებს სთავაზობს.<br />
-        <button class="main-button">პროდუქტის ნახვა</button>
+        <button class="main-button dark hide">პროდუქტის ნახვა</button>
       </p>
     </section>
-    <section class="container partners">
+    <section class="container partners hide">
       <img src="./images/partner-1.png" alt="Partner 1" />
       <img src="./images/partner-2.png" alt="Partner 2" />
       <img src="./images/partner-3.png" alt="Partner 3" />
       <img src="./images/partner-4.png" alt="Partner 4" />
       <img src="./images/partner-5.png" alt="Partner 5" />
     </section>
-    <section class="container">
-      <div class="products-wrapper">
-        <div class="product see-all">
+    <section class="container main-products swiper-container">
+      <h2 class="hidden" style="padding: 30px 0">ჩვენი ბოლო პროდუქტი</h2>
+      <div class="products-wrapper swiper-wrapper">
+        <div class="product see-all hide">
           <div class="text">
             <h2>ჩვენი ბოლო პროდუქტი</h2>
           </div>
           <button>ნახე სრულად<i class="fa fa-arrow-right"></i></button>
         </div>
-        <div class="product">
+        <div class="product swiper-slide">
           <img src="./images/small-heater.png" alt="Product image" />
           <div class="text">
             <h2>Protherm Water Heater</h2>
@@ -68,7 +90,7 @@
             </ul>
           </div>
         </div>
-        <div class="product">
+        <div class="product swiper-slide">
           <img src="./images/small-heater.png" alt="Product image" />
           <div class="text">
             <h2>Protherm Water Heater</h2>
@@ -79,7 +101,7 @@
             </ul>
           </div>
         </div>
-        <div class="product">
+        <div class="product swiper-slide">
           <img src="./images/small-heater.png" alt="Product image" />
           <div class="text">
             <h2>Protherm Water Heater</h2>
@@ -135,5 +157,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/mainpage.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
