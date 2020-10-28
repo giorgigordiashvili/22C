@@ -1,3 +1,16 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    document.getElementById("head").style.padding = "0";
+   
+  } else {
+    document.getElementById("head").style.padding = "30px 0";
+    
+  }
+}
+
+
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
 

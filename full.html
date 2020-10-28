@@ -13,7 +13,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./css/main.css" />
+  
   </head>
   <body>
     <header class="container">
@@ -67,6 +70,27 @@
             პროდუქტების იძულებითი გამონადენით სპეციალურ დიზაინურ ბურღვაში
             (კოაქსიალური ბამბა)
           </p>
+          <h2>ზომა</h2>
+          <div class="sizesContainer">
+            <select name="size" id="size" class="standard">
+                <option value="-1" selected="selected">SELECT SIZE</option>
+                <option value="0">XS</option><option value="1">S</option><option value="2">M- OUT OF STOCK</option><option value="3">L</option><option value="4">XL- OUT OF STOCK</option>
+                <option value="5">XS</option><option value="6">S</option><option value="7">M- OUT OF STOCK</option><option value="8">L</option><option value="9">XL- OUT OF STOCK</option>
+
+            </select>
+
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="active">XS</a>
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="">S</a>
+            <a href="javascript:void(0)" class="outStock" data-cart-button-text="ADD TO BAG" data-size="Array" data-out="1">M</a>
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="">L</a>
+            <a href="javascript:void(0)" class="outStock" data-cart-button-text="ADD TO BAG" data-size="Array" data-out="1">XL</a>
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="">XS</a>
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="">S</a>
+            <a href="javascript:void(0)" class="outStock" data-cart-button-text="ADD TO BAG" data-size="Array" data-out="1">M</a>
+            <a href="javascript:void(0)" data-cart-button-text="ADD TO BAG" data-preorder="" data-size="Array" class="">L</a>
+            <a href="javascript:void(0)" class="outStock" data-cart-button-text="ADD TO BAG" data-size="Array" data-out="1">XL</a>
+
+        </div>
           <p><b>Brand</b> - Ariston (Italy)</p>
           <p><b>Series </b> - CARES X</p>
           <p><b>Chimney Connection </b> - 60/100 mm</p>
@@ -151,5 +175,6 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/full.js"></script>
+    <script src="./js/size.js"></script>
   </body>
 </html>

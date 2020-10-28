@@ -1,9 +1,17 @@
 header {
+  position: sticky;
+  top: 0;
   font-size: 15px;
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  transition: 300ms all ease-in-out;
+  z-index: 999;
+  .scrolled {
+    padding: 0;
+  }
   .logo {
     img {
       width: 5vw;

@@ -7,6 +7,14 @@
   }
 
   .product {
+    &:not(:first-child) {
+      &:hover {
+        border: 1px solid #f05323;
+        cursor: pointer;
+      }
+    }
+    border: 1px solid transparent;
+
     &.see-all {
       height: 70%;
       .text {
@@ -17,6 +25,8 @@
         }
       }
       button {
+        cursor: pointer;
+
         font-family: Firago;
         background-color: #fff;
         border: 0;
@@ -26,6 +36,10 @@
         text-align: left;
         position: relative;
         padding: 30px;
+        transition: 200ms;
+        &:hover {
+          transform: scale(1.03);
+        }
         i {
           background-color: #f05323;
           position: absolute;
@@ -44,6 +58,8 @@
     border-radius: 8px;
     img {
       width: 45%;
+      height: 200px;
+      object-fit: contain;
     }
     .text {
       text-align: left;
