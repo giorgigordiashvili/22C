@@ -46,17 +46,19 @@
 
     .products {
       grid-area: products;
+      grid-gap: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       @media only screen and (max-width: 768px) {
         padding-top: 100px;
+        grid-template-columns: 1fr;
       }
       .product {
         box-sizing: border-box;
 
-        width: 28%;
+        width: 100%;
         box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.04);
         margin: 1% 1%;
         padding: 15px;
@@ -72,7 +74,7 @@
         }
         @media only screen and (max-width: 768px) {
           margin: 0 1%;
-          width: 45%;
+          width: 100%;
         }
 
         .main-button {
